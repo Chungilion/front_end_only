@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin bài kiểm tra</title>
+</head>
+<body>
+    <h1>Thông tin bài kiểm tra</h1>
+    <form id="examForm">
+        <label for="examName">Tên bài kiểm tra:</label>
+        <input type="text" id="examName" required><br>
+        
+        <label for="examDescription">Miêu tả:</label><br>
+        <textarea id="examDescription" rows="4" cols="50" required></textarea><br>
+        
+        <label for="examType">Loại bài kiểm tra:</label>
+        <select id="examType" required>
+            <option value="free">Tự do</option>
+            <option value="timed">Tính giờ</option>
+        </select><br>
+        
+        <label for="questionList">Danh sách câu hỏi:</label><br>
+        <textarea id="questionList" rows="6" cols="50" required></textarea><br>
+        
+        <button type="submit" onclick="submitForm()">Xác nhận</button>
+    </form>
+
+    <div id="displayInfo"></div>
+
+    <script src="addQuiz.js"></script>
+</body>
+</html>
